@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pr&aacute;ctica 9</title>
+</head>
+<!--Este codigo se esta alargando demasiado, ayuda-->
+<style>
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+body{
+  background-color: aliceblue;
+}
+.header {
+    background-color:#f1bfce ;
+    color: #003238;
+    padding: 15px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #f1bfce;
+    color: #240006;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #b954b9;
+}
+.aside {
+    background-color: #f1bfce;
+    padding: 15px;
+    color: #240006;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.footer {
+    background-color: #dd73ba;
+    color: #003238;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+.image2{
+   display: none;
+}
+
+@media only screen and (max-width: 768px){ 
+   .image1{
+     display: none;
+   }
+
+   .image2{
+     display: block;
+   }
+}
+#bigman{
+  border-style: solid;
+  border-color: #21002b;
+  border-radius: 1px;
+}
+#centerfold{
+  text-align: center;
+}
+/* For width 400px and larger: */
+
+</style>
+<body>
+
+<div class="header">
+  <h1 id="centerfold"> Unidad 2 </h1>
+</div>
+
+<div class="row">
+
+<div class="col-3 menu">
+  <ul>
+    <li><a href="https://kiteminu.github.io/practica1/">Pr&aacute;ctica 1</a></li>
+    <li><a href="https://kiteminu.github.io/practica2/">Pr&aacute;ctica 2</a></li>
+    <li><a href="https://kiteminu.github.io/practica3/">Pr&aacute;ctica 3</a></li>
+    <li><a href="https://kiteminu.github.io/practica4/">Pr&aacute;ctica 4</a></li>
+    <li><a href="https://kiteminu.github.io/practica5/">Pr&aacute;ctica 5</a></li>
+    <li><a href="https://kiteminu.github.io/practica6/">Pr&aacute;ctica 6</a></li>
+    <li><a href="https://kiteminu.github.io/practica7/">Pr&aacute;ctica 7</a></li>
+    <li><a href="https://kiteminu.github.io/practica8/">Pr&aacute;ctica 8</a></li>
+  </ul>
+</div>
+
+<div class="col-6">
+  <article><!--CV por tercera vez consecutiva-->
+    <header>
+          <hgroup>
+              <h1>Mi CV</h1>
+              <h4>Informaci&oacute;n acerca de m&iacute;</h4>
+          </hgroup>
+          <time datetime="2023-02-27" pubdate>
+                publicado 27-02-2023
+          </time>
+    </header>
+      <h2>Video</h2>
+      <video width="320" height="240" controls>
+        <source src="media/myvid.mp4" type="video/mp4">
+        Su browser no soporta el tag de video
+    </video>
+    <br>
+    <figure>
+        <a href="https://goo.gl/maps/NnniyYuZyj9J89zLA"> <h2>Direcci&oacute;n</h2></a><br>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d472.0022136093978!2d-97.09022908531954!3d18.841880400000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c4fd5e54448ff7%3A0x472db90683b3f9dc!2s1o.%20de%20Mayo%2036B%2C%20Benito%20Ju%C3%A1rez%2C%2094390%20Orizaba%2C%20Ver.!5e0!3m2!1sen!2smx!4v1676918928195!5m2!1sen!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <figcaption>
+            Esta es mi direcci&oacute;n general
+        </figcaption>
+  </figure><br><br>
+
+    
+<h3>Datos</h3>
+<div id="bigman">
+    <br><br>
+
+    <h2>Datos personales</h2>
+    <ul>
+        <li>Nombre completo: <b>John Ram&iacute;rez Castillo</b></li>
+        <li>Fecha de nacimiento: <b>21/07/2002</b></li>
+        <li>Lugar de nacimiento: <b>Iredell, North Carolina</b></li>
+    </ul>
+    <br>
+    <h2>Formaci&oacute;n acad&eacute;mica</h2>
+    <ul>
+        <li>2007-2008: <b>Jard&iacute;n de ni&ntilde;os Gabriela Mistral</b></li>
+        <li>2008-2014: <b>Escuela Primaria Ignacio Zaragoza</b></li>
+        <li>2014-2017: <b>Escuela Telesecundaria Ni&ntilde;os H&eacute;roes de Chapultepec</b></li>
+        <li>2017-2020: <b>Centro de Bachillerato Tecnol&oacute;gico Industrial y de Servicios No. 47</b></li>
+        <li>2020-Hasta la fecha: <b>Instituto Tecnol&oacute;gico de Orizaba</b></li>
+    </ul>
+    <br>
+    <h2>Experiencia laboral</h2>
+    <ul>
+        <li>2020-2022: <b>Artista digital por comisiones</b></li>
+    </ul>
+</div>
+
+      <footer>
+          <p>Comentarios (1): El CV se est&aacute; haciendo demasiado grande para caber en m&aacute;s pr&aacute;cticas</p>
+      </footer>
+  </article>
+</div>
+
+<div class="col-3 right">
+  <div class="aside">
+    <img src="img/ito1.png" class="image1"/>
+<img src="img/ito0.png" class="image2"/>
+
+  </div>
+</div>
+
+</div>
+
+<div class="footer">
+  <p>Cambiar el tama&ntilde;o de la ventana del navegador para ver c&oacute;mo responde el contenido al redimensionamiento.</p>
+</div>
+
+</body>
+</html>
